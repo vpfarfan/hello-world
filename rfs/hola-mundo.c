@@ -31,6 +31,8 @@ int main(int argc, char** argv){
 
 	getchar();
 	printf("Modificado desde la web\n");
+	
+	printf("Cambio para ver en Eclipse\n")
 
 
 	return EXIT_SUCCESS;
