@@ -30,7 +30,7 @@ int main(int argc, char** argv){
 	printf("Modificado desde la web\n");
 
 	getchar();
-	printf("Modificado desde la web\n");
+	printf("Modificado desde la web para hacer merge en Eclipse\n");
 	
 	printf("Cambio para hacer merge Eclipse\n")
 
