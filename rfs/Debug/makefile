@@ -22,19 +22,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: rfs
+all: RemoteFileSystem
 
 # Tool invocations
-rfs: $(OBJS) $(USER_OBJS)
+RemoteFileSystem: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc  -o "rfs" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc  -o "RemoteFileSystem" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(C_DEPS)$(EXECUTABLES) rfs
+	-$(RM) $(OBJS)$(C_DEPS)$(EXECUTABLES) RemoteFileSystem
 	-@echo ' '
 
 .PHONY: all clean dependents

@@ -19,7 +19,7 @@ int main(int argc, char** argv){
 		printf("El número de iteración es: %d\n", i);
 	}
 
-	gets(buffer);
+	scanf("%s", buffer);
 	printf("Contenido del buffer: %s", buffer);
 
 	printf("Escribi algo:\n");
