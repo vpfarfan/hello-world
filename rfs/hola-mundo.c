@@ -8,6 +8,7 @@
 #include <stdlib.h>
 
 int main(int argc, char** argv){
+	char buffer[80];
 
 	int i;
 	char texto[256];
@@ -18,11 +19,14 @@ int main(int argc, char** argv){
 		printf("El número de iteración es: %d\n", i);
 	}
 
+	gets(buffer);
+	printf("Contenido del buffer: %s", buffer);
+
 	printf("Escribi algo:\n");
 	fgets(texto, 256, stdin);
 	printf("El texto ingresado es: %s\n", texto);
 	
-	printf("Modificado desde la web\n")
+	printf("Modificado desde la web\n");
 
 	return EXIT_SUCCESS;
 }
