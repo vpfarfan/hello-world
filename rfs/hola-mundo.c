@@ -25,8 +25,13 @@ int main(int argc, char** argv){
 	printf("Escribi algo:\n");
 	fgets(texto, 256, stdin);
 	printf("El texto ingresado es: %s\n", texto);
+
 	
 	printf("Modificado desde la web\n");
+
+	getchar();
+	printf("Modificado desde la web\n");
+
 
 	return EXIT_SUCCESS;
 }
