@@ -1,0 +1,26 @@
+/*
+ * hola-mundo.c
+ *
+ *  Created on: 17/8/2015
+ *      Author: Vero
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char** argv){
+
+	int i;
+	char texto[256];
+
+	printf("Hola mundo!\n");
+
+	for(i = 0; i <= 15; i++){
+		printf("El número de iteración es: %d\n", i);
+	}
+
+	printf("Escribi algo:\n");
+	fgets(texto, 256, stdin);
+	printf("El texto ingresado es: %s\n", texto);
+
+	return EXIT_SUCCESS;
+}
